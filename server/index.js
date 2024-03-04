@@ -46,6 +46,9 @@ wss.on('connection', (ws) => {
   });
 });
 
+app.get('/', (req, res) => {
+  res.send("Welcome to server");
+})
 
 app.get('/api/admin', (req, res) => {
 
